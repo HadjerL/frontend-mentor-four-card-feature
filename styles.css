@@ -1,0 +1,215 @@
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --white: white;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*========================== 
+*          Layouts
+| ==========================*/
+html{
+    font-size: 15px;
+}
+body{
+    font-family: 'Poppins';
+    display:grid;
+    justify-content: center;
+    background-color: var(--Very-Light-Gray);
+}
+.container{
+    max-width: 350px;
+    display: grid;
+    gap: 5rem;
+    padding-top: 6rem;
+    overflow: hidden;
+    padding-bottom: 6rem;
+}
+.header-container{
+    text-align: center;
+    display: grid;
+    gap: 1.5rem;
+}
+.main-container{
+    display: grid;
+    gap: 2rem;
+}
+
+/*========================== 
+*         Typography
+| ==========================*/
+
+.header-titles{
+    font-size: larger;
+}
+.header-titles :first-child{
+    font-weight: 200;
+}
+h2{
+    color: var(--Very-Dark-Blue);
+}
+p{
+    color: var(--Grayish-Blue);
+    /* font-size: 14px; */
+}
+
+/*========================== 
+*         Components
+| ==========================*/
+
+.card{
+    background-color:var(--white);
+    /* background-color: violet; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--Grayish-Blue) 0px 5px 20px;
+    cursor: pointer;
+    
+}
+.card:hover{
+    scale: 1.1;
+}
+.card .icon{
+    display: flex;
+    justify-content: flex-end;
+}
+.card:first-of-type{
+    transform: translateX(150%) translateY(-20px);
+    border-top: 4px solid var(--Cyan);
+    animation: right-cards-animation 700ms ease-in-out 1 forwards;
+}
+.card:nth-of-type(2){
+    transform: translateX(-150%) translateY(-20px);
+    border-top: 4px solid var(--Red);
+    animation: left-cards-animation 700ms ease-in-out 300ms 1 forwards;
+    
+}
+.card:nth-of-type(3){
+    transform: translateX(150%) translateY(-20px);
+    border-top: 4px solid var(--Orange);
+    animation: right-cards-animation 700ms ease-in-out 600ms 1 forwards;
+
+}
+.card:last-of-type{
+    transform: translateX(-150%) translateY(-20px);
+    border-top: 4px solid var(--Blue);
+    animation: left-cards-animation 700ms ease-in-out 900ms 1 forwards;
+}
+
+
+/*========================== 
+*          Animation
+| ==========================*/
+
+/* mobile */
+@keyframes left-cards-animation {
+    0%{
+        transform: translate(-150%, -20px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+@keyframes right-cards-animation {
+    0%{
+        transform: translate(150%, -20px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+/* Desktop */
+@keyframes desktop-cards-top {
+    0%{
+        translate: 0 calc(50% + 1rem);
+    }
+    100%{
+        translate: 0;
+    }
+}
+@keyframes desktop-cards-bottom {
+    0%{
+        translate: 0 calc(-50% - 1rem);
+    }
+    100%{
+        translate: 0;
+    }
+}
+@keyframes desktop-cards-left {
+    0%{
+        transform: translateX(calc(100% + 2rem));
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes desktop-cards-right {
+    0%{
+        transform: translateX(calc(-100% - 2rem));
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+/*========================== 
+*        Media queries
+| ==========================*/
+
+
+@media (min-width:640px){
+    .container{
+        max-width: unset;
+    }
+    header{
+        display: grid;
+        justify-content: center;
+    }
+    .header-container{
+        max-width: 500px;
+    }
+    .main-container{
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+
+
+    .card:first-of-type{
+        grid-row: span 2;
+        transform: translate(0);
+        transform: translateX(calc(100% + 2rem));
+        animation: desktop-cards-left 700ms ease-out 1500ms forwards;
+    }
+    .card:nth-of-type(2){
+        transform: translate(0);
+        translate: 0 calc(50% + 1rem);
+        animation: desktop-cards-top 700ms ease-out 1000ms forwards;
+
+    }
+    .card:nth-of-type(3){
+        grid-row-start: 2;
+        grid-column-start: 2;
+        transform: translate(0);
+        translate: 0 calc(-50% - 1rem);
+        animation: desktop-cards-bottom 700ms ease-out 500ms forwards;
+    }
+    .card:last-of-type{
+        grid-row: span 2;
+        transform: translate(0);
+        transform: translateX(calc(-100% - 2rem));
+        animation: desktop-cards-right 700ms ease-out forwards; 
+
+    }
+}
