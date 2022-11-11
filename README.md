@@ -1,11 +1,11 @@
 
 
-![Alt text](../../../../../../C:/Users/aziz2/OneDrive/Bureau/frontend-mentor-four-card-feature/images/_Frontend_Mentor_-_Four_card_feature_section_solution.png)
+![Alt text](./images/_Frontend_Mentor_-_Four_card_feature_section_solution.png)
 
 This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 
-![Alt text](../../../../../../C:/Users/aziz2/OneDrive/Bureau/frontend-mentor-four-card-feature/images/Table_Of_Content.png)
+![Alt text](./images/Table_Of_Content.png)
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
