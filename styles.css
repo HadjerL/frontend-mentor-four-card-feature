@@ -68,7 +68,6 @@ p{
 
 .card{
     background-color:var(--white);
-    /* background-color: violet; */
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -76,7 +75,6 @@ p{
     border-radius: 10px;
     box-shadow: var(--Grayish-Blue) 0px 5px 20px;
     cursor: pointer;
-    
 }
 .card:hover{
     scale: 1.1;

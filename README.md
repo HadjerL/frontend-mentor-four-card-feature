@@ -17,36 +17,33 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 
-## Overview
 
+![Alt text](../../../../../../C:/Users/aziz2/OneDrive/Bureau/frontend-mentor-four-card-feature/images/Overview.png)
 ### The challenge
 
 Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 
+___
 ### Screenshot
 
-![](./screenshot.jpg)
+Desktop Screenshot
+![Alt text](../../../../../../C:/Users/aziz2/OneDrive/Bureau/frontend-mentor-four-card-feature/images/DesktopScreenShot.jpeg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+Mobile Screenshot
+![Alt text](../../../../../../C:/Users/aziz2/OneDrive/Bureau/frontend-mentor-four-card-feature/images/MobileScreenshot.jpeg)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
+___
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-  [Solution URL](https://github.com/HadjerL/frontend-mentor-four-card-feature.git)
+-  [Live Site URL](https://frolicking-swan-c6967c.netlify.app/)
 
-## My process
+![Alt text](../../../../../../C:/Users/aziz2/OneDrive/Bureau/frontend-mentor-four-card-feature/images/My_Process.png)
 
 ### Built with
 
@@ -55,59 +52,60 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+___
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This is the best fun I had working on a project. I have learned how to do some animations, thought it's been tricky a bit. I have tried to make smooth and enjoyable. I am also working on making my code cleaner by writing more comment and ordering everything in a logical way.
 
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+ <div class="card">
+          <div>
+            <h2>Team Builder</h2>
+            <p>Scans our talent network to create the optimal team for your project</p>
+          </div>
+          <div class="icon">
+            <img src="images/icon-team-builder.svg" alt="Team Builder">
+          </div>
+        </div>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.card{
+    background-color:var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--Grayish-Blue) 0px 5px 20px;
+    cursor: pointer;
+}
+.card:first-of-type{
+    transform: translateX(150%) translateY(-20px);
+    border-top: 4px solid var(--Cyan);
+    animation: right-cards-animation 700ms ease-in-out 1 forwards;
+}
+@keyframes right-cards-animation {
+    0%{
+        transform: translate(150%, -20px);
+    }
+    100%{
+        transform: translate(0);
+    }
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
+___
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+The next step I am going for is to learn and master Javascript in order to make even better animations. I believe for that I am getting books that's gonna help me with that. As for this solution I need to fix the overflow caused by translating the cards
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
+___
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [CSS animation](https://youtu.be/cfq7u52lvfI) - This helped me for it's simple and wholesome. This guy is really awsome.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+![Alt text](./images/Author.png)
 
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@HadjerL](https://www.frontendmentor.io/profile/HadjerL)
