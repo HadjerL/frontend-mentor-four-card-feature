@@ -21,7 +21,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 
 
-![Alt text](../../../../../../C:/Users/aziz2/OneDrive/Bureau/frontend-mentor-four-card-feature/images/Overview.png)
+![Alt text](./images/Overview.png)
 ### The challenge
 
 Users should be able to:
@@ -32,10 +32,10 @@ ___
 ### Screenshot
 
 Desktop Screenshot
-![Alt text](../../../../../../C:/Users/aziz2/OneDrive/Bureau/frontend-mentor-four-card-feature/images/DesktopScreenShot.jpeg)
+![Alt text](./images/DesktopScreenShot.jpeg)
 
 Mobile Screenshot
-![Alt text](../../../../../../C:/Users/aziz2/OneDrive/Bureau/frontend-mentor-four-card-feature/images/MobileScreenshot.jpeg)
+![Alt text](./images/MobileScreenshot.jpeg)
 
 ___
 ### Links
@@ -43,7 +43,7 @@ ___
 -  [Solution URL](https://github.com/HadjerL/frontend-mentor-four-card-feature.git)
 -  [Live Site URL](https://frolicking-swan-c6967c.netlify.app/)
 
-![Alt text](../../../../../../C:/Users/aziz2/OneDrive/Bureau/frontend-mentor-four-card-feature/images/My_Process.png)
+![Alt text](./images/My_Process.png)
 
 ### Built with
 

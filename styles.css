@@ -208,6 +208,5 @@ p{
         transform: translate(0);
         transform: translateX(calc(-100% - 2rem));
         animation: desktop-cards-right 700ms ease-out forwards; 
-
     }
 }
